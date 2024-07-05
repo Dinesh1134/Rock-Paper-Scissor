@@ -1,0 +1,94 @@
+body {
+    background-color: rgb(255, 255, 255);
+    color: white;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; 
+}
+
+.container-grid {
+    width: 100%;
+    max-width: 600px; 
+    text-align: center; 
+}
+
+.game-content {
+    background-color: rgb(48, 48, 48);
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.move-buttons {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.move-button {
+    background-color: rgb(25, 25, 25);
+    border: 3px solid white;
+    height: 100px; 
+    width: 100px;
+    border-radius: 50%;
+    margin: 0 10px;
+}
+
+.move-icon {
+    width: 50px;
+}
+
+.result {
+    font-size: 25px;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.score {
+    margin-top: 20px;
+}
+
+.reset-button,
+.autoPlay-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    margin: 10px;
+    display: block;
+    margin: 0 auto; 
+    border-radius: 5px;
+}
+
+.autoPlay-button{
+    margin-top: 10px;
+}
+
+.confirmation {
+    width: 80%;
+    max-width: 400px;
+    background-color: rgb(48, 48, 48);
+    color: white;
+    padding: 12px;
+    border-radius: 3px;
+    margin: 20px auto;
+}
+
+@media (max-width: 600px) {
+    .move-buttons {
+        flex-direction: column; 
+    }
+    
+    .move-button {
+        margin: 10px 0; 
+    }
+    
+    .reset-button,
+    .autoPlay-button {
+        font-size: 14px;
+        padding: 8px 15px;
+    }
+}
